@@ -209,6 +209,15 @@ nav li a {
 nav li a:hover {
   color: #2a1f14;
   background-color: #f6eee4;
+  opacity: 0.5;
+}
+.grid{
+  grid-template-columns: 30px 30px 30px;
+}
+/* Desktop Viewport: style rule for aside */
+aside{
+  grid-column: 1 / span 3;
+  font-size: 2em;
 }
 /* Desktop Viewport: Style rules for main content */
 #info ul {
@@ -231,6 +240,15 @@ nav li a:hover {
     background-color: #f6eee4;
 
   }
+  /* Large Desktop Viewport: Style rule for grid */
+.grid{
+  grid-template-columns: 30px 30px 30px 30px;
+}
+/* Desktop Viewport: style rule for aside */
+aside{
+  grid-column: 1 / span 4;
+  font-size: 3em;
+}
 }
   /* Media Query for print */
   @media print {
