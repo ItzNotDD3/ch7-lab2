@@ -5,7 +5,7 @@ File Name: styles.css
 /*
 
 /* CSS Reset */
-body, header, nav, main, footer, img, h1, ul {
+body, header, nav, main, footer, img, h1, ul, aside, figure, figcaption {
 margin: 0;
 padding: 0;
 border: 0;
@@ -17,8 +17,7 @@ img {
   display: block;
 
 }
-/* style rule for mobile viewpoint */
-
+/* Style rules for mobile viewport*/
 
 /* hide tab-desk class */
 .tab-desk {
@@ -123,6 +122,26 @@ main p {
   border: 5px solid #373684;
 
 }
+.round {
+  border-radius: 8px;
+}
+aside{
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #373684;
+  text-shadow: 4px 4px 10px #c5a687;
+}
+figure{
+  box-shadow: 6px 6px 10px #c5a687;
+  max-width: 400px;
+  margin: 2% auto;
+  border: 4px solid #2a1f14;
+}
+figcaption{
+border-top: 4px solid #2a1f14;
+  padding: 2%;
+}
 /* style rules for footer content */
 footer {
   text-align: center;
@@ -158,6 +177,15 @@ nav li {
 }
 nav li a {
   padding: 0.5em;
+}
+/* Tablet Viewport: Style rule for grid */
+.grid{
+  display: grid;
+  grid-template-columns: 10px 10px;
+}
+/* Tablet Viewport: Style rule for aside */
+aside{
+  grid-column: 1 / span 2;
 }
 }
 /* media query for Desktop Viewport */
